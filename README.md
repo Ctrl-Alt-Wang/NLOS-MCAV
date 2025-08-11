@@ -1,4 +1,4 @@
-# NLOS-MCAV: Non-Line-of-Sight Multi-Channel Adaptive Vision
+# NLOS-MCAV: Passive NLOS Imaging Based on Multi-dimension Collaborative Attention Module
 
 ## 项目概述
 
@@ -22,17 +22,13 @@ NLOS-MCAV/
 │   ├── network_swinir_fft.py # SwinIR + FFT模型
 │   ├── network_swinir_fft_GLU.py # SwinIR + FFT + GLU模型
 │   ├── MIMOUnet.py          # MIMO U-Net模型
-│   ├── HGSRCNN.py           # HGSRCNN模型
-│   └── Phong.py             # Phong光照模型
 ├── train/                   # 训练脚本
 │   ├── train_r2Unet_MY.py   # MY数据集训练
 │   ├── train_r2Unet_MG.py   # MG数据集训练
 │   ├── train_STL.py         # SuperModel数据集训练
-│   ├── train_HGSRCNN.py     # HGSRCNN模型训练
-│   └── train_loss.py        # 损失函数训练
+│   └── train_loss.py        # 损失函数
 ├── test/                    # 测试脚本
 │   ├── test.py              # 主要测试脚本
-│   └── test_phong.py        # Phong模型测试
 ├── util/                    # 工具函数
 │   ├── metrics.py           # 评估指标(SSIM, PSNR)
 │   ├── layers.py            # 自定义网络层

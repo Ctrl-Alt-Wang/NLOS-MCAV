@@ -52,21 +52,6 @@ NLOS-MCAV/
   - SwinIR + FFT (`network_swinir_fft.py`)
   - SwinIR + FFT + GLU (`network_swinir_fft_GLU.py`)
 
-### 3. MIMO U-Net
-- **文件**: `model/MIMOUnet.py`
-- **特点**: 多输入多输出的U-Net架构
-- **应用**: 复杂的图像恢复任务
-
-### 4. HGSRCNN
-- **文件**: `model/HGSRCNN.py`
-- **特点**: 分层组稀疏残差CNN
-- **应用**: 超分辨率重建
-
-### 5. Phong模型
-- **文件**: `model/Phong.py`
-- **特点**: 基于Phong光照模型的图像处理
-- **应用**: 光照相关的图像恢复
-
 ## 数据集支持
 
 项目支持多种数据集格式：

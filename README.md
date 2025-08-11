@@ -184,7 +184,7 @@ Data/
 ```bibtex
 @misc{nlos-mcav,
   title={NLOS-MCAV: Non-Line-of-Sight Multi-Channel Adaptive Vision},
-  author={Your Name},
+  author={Shaohui Jin},
   year={2024},
   url={https://github.com/Ctrl-Alt-Wang/NLOS-MCAV}
 }

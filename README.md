@@ -154,21 +154,6 @@ python test/test.py \
 - **实现**: `util/metrics.py`
 - **用途**: 衡量图像结构相似性
 
-## 损失函数
-
-### 1. MSE Loss
-- **用途**: 基础的均方误差损失
-- **适用**: 大多数重建任务
-
-### 2. Charbonnier Loss
-- **实现**: `loss/ssim.py`
-- **特点**: 对异常值更鲁棒的损失函数
-
-### 3. SSIM Loss
-- **用途**: 基于结构相似性的损失
-- **优势**: 更符合人眼视觉感知
-
-
 ## 注意事项
 
 1. **数据预处理**: 确保输入图像格式正确
@@ -207,23 +192,6 @@ Data/
 ├── MG1500/
 └── SuperModel/
 ```
-## 高级功能
-
-### 1. 多GPU训练
-```bash
-# 设置GPU设备
-export CUDA_VISIBLE_DEVICES=0,1
-python train/train_r2Unet_MY.py --gpu_id "0,1"
-```
-
-### 2. 断点续训
-```bash
-python train/train_r2Unet_MY.py \
-    --trainContinue True \
-    --train_checkpoints_load_dir "./checkpoints/NLOS-ST_MY/" \
-    --which_epoch "100"
-```
-
 ## 引用
 
 如果您在研究中使用了本项目，请引用：
